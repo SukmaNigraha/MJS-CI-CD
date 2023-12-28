@@ -44,9 +44,9 @@ jobs:
         username: ${{ secrets.USERNAME }}
         password: ${{ secrets.PASSWORD }}
         port: ${{ secrets.PORT }}
-    #     script: |
-    #       cd /home/bayskie/ci-cd-implementation
-    #       git pull origin main
-    #       docker compose -f docker-compose.yml down
-    #       docker pull sukmanigraha/mjs-ci-cd
-    #       docker compose -f docker-compose.yml up -d
+        script: |
+          cd /home/sukma/MJS-CI-CD
+          git pull origin main
+          docker compose -f docker-compose.yml down
+          docker pull sukmanigraha/mjs-ci-cd
+          docker compose -f docker-compose.yml up -d
